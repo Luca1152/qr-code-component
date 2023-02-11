@@ -1,5 +1,10 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
+import dynamic from "next/dynamic";
+
+const HelloWorld = dynamic(() => import("@/components/HelloWorld"), {
+    ssr: false
+});
 
 export default function Home() {
     return (
@@ -12,7 +17,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                Hello, world!
+                <HelloWorld/>
             </main>
         </>
     )
