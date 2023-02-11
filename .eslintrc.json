@@ -4,7 +4,6 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:lit/recommended",
     "next/core-web-vitals",
-    "plugin:unicorn/all",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
