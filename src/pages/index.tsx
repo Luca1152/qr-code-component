@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import dynamic from "next/dynamic";
 
-const HelloWorld = dynamic(() => import("@/components/HelloWorld"), {
+const HelloWorld = dynamic(() => import("@/components/hello-world"), {
     ssr: false
 });
 
