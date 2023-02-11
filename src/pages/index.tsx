@@ -2,7 +2,7 @@ import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import dynamic from 'next/dynamic';
 
-const HelloWorld = dynamic(() => import('@/components/hello-world'), {
+const QrCode = dynamic(() => import('@/components/lt-qr-code'), {
   ssr: false,
 });
 
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={styles['main']}>
-        <HelloWorld />
+        <QrCode />
       </main>
     </>
   );

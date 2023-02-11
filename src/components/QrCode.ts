@@ -1,9 +1,9 @@
 import { html, LitElement } from 'lit';
 
-class HelloWorld extends LitElement {
+class QrCode extends LitElement {
   override render() {
     return html` <p>Hello, world!</p> `;
   }
 }
 
-export default HelloWorld;
+export default QrCode;
